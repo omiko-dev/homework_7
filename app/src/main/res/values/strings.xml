@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">homework_7</string>
+    <string name="field_is_numeric">Field is Numeric</string>
+    <string name="enter_field_name">Enter Field Name</string>
+    <string name="add_field">Add Field</string>
+    <string name="strings">Strings</string>
+    <string name="numeric">Numeric</string>
+</resources>
