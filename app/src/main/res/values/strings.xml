@@ -5,4 +5,5 @@
     <string name="add_field">Add Field</string>
     <string name="strings">Strings</string>
     <string name="numeric">Numeric</string>
+    <string name="enter_field_numeric">Enter Field Numeric</string>
 </resources>

@@ -28,11 +28,15 @@ class MainActivity : AppCompatActivity() {
             acbButton.setOnClickListener {
                 if (!cbNumeric.isChecked && !etName.text.isNullOrBlank()) {
                     // use createTextView(isInt: Boolean)
-                    textLayout.addView(createTextView(cbNumeric.isChecked))
+                    textLayout.addView(
+                        createTextView(cbNumeric.isChecked)
+                    )
                 }
                 if (cbNumeric.isChecked && !etName.text.isNullOrBlank()) {
                     // use createTextView(isInt: Boolean)
-                    intLayout.addView(createTextView(cbNumeric.isChecked))
+                    intLayout.addView(
+                        createTextView(cbNumeric.isChecked)
+                    )
                 }
             }
         }
@@ -57,8 +61,10 @@ class MainActivity : AppCompatActivity() {
                 etName.text?.clear()
                 if(isChecked){
                     etName.inputType = InputType.TYPE_CLASS_NUMBER
+                    etName.hint = resources.getString(R.string.enter_field_numeric)
                 }else{
                     etName.inputType = InputType.TYPE_CLASS_TEXT
+                    etName.hint = resources.getString(R.string.enter_field_name)
                 }
             }
         }
